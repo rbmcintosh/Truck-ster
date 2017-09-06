@@ -68,7 +68,7 @@ class CreateTruck extends React.Component {
                 latitude: e.target.value
               });
             }} />
-            Location (longitude):<br /> <input className="input_field" onChange={(e) => {
+            <br />Location (longitude):<br /> <input className="input_field" onChange={(e) => {
               this.setState({
                 longitude: e.target.value
               });
