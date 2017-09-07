@@ -13,7 +13,7 @@ function Home(props) {
         <nav id="menu">
           <a className="menu-items" href="">About</a>
           <a className="menu-items" href="">Contact</a>
-          <Link to="/create"><a className="menu-items">Login | Create Profile</a>
+          <Link to="/login"><a className="menu-items">Login | Create Profile</a>
           </Link>
         </nav>
 
