@@ -10,6 +10,7 @@ function ListOfTrucks (props) {
            
         <div id="gallery">
           <div id="image_div">
+            <img className="img" src={truck.image} /> 
           </div>
         <div id="button_wrapper">
           <button id="img_slide_left">&#10094;</button>
@@ -22,11 +23,14 @@ function ListOfTrucks (props) {
       <p id="blurb" className="card_text">
         {truck.description}
       </p>
-        <div className="gps">Location{truck.location}
+        <div className="gps">Location - {truck.latitude},{truck.longitude}
           <div id="map_wrapper">
             <div id="map">
             </div>
           </div>
+        </div>
+        <div className="website">Website - 
+          {truck.website}
         </div>
         <Link to={"/truck/" + truck._id}>More</Link>
       </div>

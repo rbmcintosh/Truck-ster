@@ -25,10 +25,10 @@ const schema = new mongoose.Schema({
     required: true,
     type: String
   },
-  // image: {
-  //   required: false,
-  //   type: File
-  // }
+  image: {
+    required: false,
+    type: String
+  }
 });
 
 const TruckModel = mongoose.model("Truck", schema);

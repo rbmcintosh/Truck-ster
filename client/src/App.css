@@ -312,7 +312,7 @@ a{
 
 /*CARDS*/
 .single-card{
-  height: 350px;
+  height: auto;
   width: 95%;
   margin: 10px auto;
   border: 3px solid salmon;
@@ -344,7 +344,7 @@ a{
 }
 
 #gallery{
-  height: 200px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -353,12 +353,23 @@ a{
 }
 
 #image_div{
-  height: 200px;
+  height: 295px;
   width: 97%;
-  background-image: url("img/waffle1.jpg");
+  margin: 0px 5px 0px 5px;
+  /* background-image: url("img/waffle1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top; */
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  /* background-image: url("img/waffle1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
 }
 
 #button_wrapper{

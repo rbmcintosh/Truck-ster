@@ -82,6 +82,13 @@ class CreateTruck extends React.Component {
               });
             }} />
           </div>
+          <div className="input_div">
+            Image URL:<br /> <input placeholder="url goes here" className="input_field" onChange={(e) => {
+              this.setState({
+                image: e.target.value
+              });
+            }} />
+          </div>
         <button id="done_button">Done!</button>
         </form>
       </div>
