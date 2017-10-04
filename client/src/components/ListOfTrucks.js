@@ -7,7 +7,6 @@ function ListOfTrucks (props) {
   let truckDivs = props.trucks.map(function(truck) {
     return (
       <div className="single-card">
-           
         <div id="gallery">
           <div id="image_div">
             <img className="img" src={truck.image} /> 
@@ -29,8 +28,11 @@ function ListOfTrucks (props) {
             </div>
           </div>
         </div>
-        <div className="website">Website - 
-          {truck.website}
+        <div className="website">
+          Website - {truck.website}
+        </div>
+        <div className="color">
+          Color - {truck.color}
         </div>
         <Link to={"/truck/" + truck._id}>More</Link>
       </div>

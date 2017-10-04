@@ -76,7 +76,7 @@ class CreateTruck extends React.Component {
           </div>
         </div>
           <div className="input_div">
-            Accent color:<br /> <input placeholder="choose a 6 digit hex number" className="input_field" onChange={(e) => {
+            Accent color:<br /> <input type="color" value="#ff0000" placeholder="choose a 6 digit hex number" className="input_field" onChange={(e) => {
               this.setState({
                 color: e.target.value
               });
