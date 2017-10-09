@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
+import SimpleMap from "./SimpleMap";
+
 
 function ListOfTrucks (props) {
   
@@ -22,12 +24,9 @@ function ListOfTrucks (props) {
       <p id="blurb" className="card_text">
         {truck.description}
       </p>
-        <div className="gps">Location - {truck.latitude},{truck.longitude}
-          <div id="map_wrapper">
-            <div id="map">
-            </div>
-          </div>
-        </div>
+      <div id="map">
+        <SimpleMap />
+      </div>
         <div className="website">
           Website - {truck.website}
         </div>
@@ -38,6 +37,8 @@ function ListOfTrucks (props) {
       </div>
     );
   });
+
+  
   
   return (
     <div>
@@ -45,6 +46,7 @@ function ListOfTrucks (props) {
     </div>
   );
 }
+
 
 ListOfTrucks.propTypes = {
   trucks: PropTypes.array.isRequired

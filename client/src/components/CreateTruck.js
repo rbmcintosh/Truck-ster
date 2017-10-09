@@ -1,5 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import { ChromePicker } from 'react-color';
+
+
 
 class CreateTruck extends React.Component {
   constructor() {
@@ -76,14 +79,15 @@ class CreateTruck extends React.Component {
           </div>
         </div>
           <div className="input_div">
-            Accent color:<br /> <input type="color" value="#ff0000" placeholder="choose a 6 digit hex number" className="input_field" onChange={(e) => {
+            <ChromePicker />
+            Accent Color:<br /> <input placeholder="enter 6 digit hex value here" className="input_field" onChange={(e) => {
               this.setState({
                 color: e.target.value
               });
             }} />
           </div>
           <div className="input_div">
-            Image URL:<br /> <input placeholder="url goes here" className="input_field" onChange={(e) => {
+            Image URL:<br /> <input placeholder="enter image url here" className="input_field" onChange={(e) => {
               this.setState({
                 image: e.target.value
               });
